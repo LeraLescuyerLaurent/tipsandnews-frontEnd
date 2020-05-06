@@ -1,0 +1,58 @@
+/**
+ * GRILLE  
+ */
+*{
+    @include box-sizing(border-box);
+}
+$columns: 12!default;
+$gutter:20px!default;
+$large: 1024px!default;
+$medium:640px!default;
+/**Extend */
+%col{
+    float: left;
+    border: 1px solid black;
+    background-color: rgba(#000000, 0.5);
+    min-height: 1px;
+    padding: 0 $gutter * 0.5;
+    position: relative;
+}
+/**Mixim */
+@mixin responsive-columns($suffix: '' ) {
+    .col#{$suffix}-center{margin: 0 auto;float: none; }
+    @for $i from 0 through $columns {
+        @if $i !=0{ 
+        .col#{$suffix}-#{$i}{ width: $i / $columns * 100vw; }
+        }
+        .col#{$suffix}-push-#{$i}{left: $i / $columns *100%}
+        .col#{$suffix}-pull-#{$i}{left: $i / $columns *100%}
+        .height#{$suffix}-#{$i}{
+            height:$i / $columns * 100vw;
+        }
+    }
+}
+/**Retir la marge left et right */
+.row{
+    margin: 0 $gutter * -1;
+    @include clearfix;
+    .row{
+        margin: 0 $gutter * -0.5;
+        @include clearfix;
+    }
+}
+/**Creation des columns pour ecrant inferieur à medium */
+@for $i from 0 through $columns {
+    @include responsive-columns();
+    .col-m-#{$i}, .col-l-#{$i}{@extend %col;}
+}
+
+
+/** Ecrants medium (supérieur à la valeur de $medium) */
+@media only screen and (min-width: $medium){
+    @include responsive-columns('-m');
+
+}
+/** Ecrants large (supperieur à la valeur de $large) */
+@media only screen and (min-width: $large){
+    @include responsive-columns('-m');
+}
