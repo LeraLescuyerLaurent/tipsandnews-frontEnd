@@ -3,6 +3,7 @@
  */
 *{
     @include box-sizing(border-box);
+    margin: 0;
 }
 $columns: 12!default;
 $gutter:20px!default;

@@ -4,20 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tips and news | index</title>
+    <script src="https://kit.fontawesome.com/81cdd09cfd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="dist/css/style.css">
+
 </head>
 <body>
-    <h1>Systéme de grille</h1>
 <div class="row">
-    <div class="col-12 col-m-6 col-m-center ">
-    <div class="row">
-        <div class="col-12 col-m-6 height-12 height-m-6">
-            <h2>venez ici</h2>
-            <p><a href="">c'est super cool</a></p>
+    <header>
+        <div class="logo ">
+            <span class="img_logo">
+                <img src="/dist/images/logo.png" alt="">
+            </span>
+            <a href="index " class="text_no_decoration">
+                <span class="color_tips  taille_span_logo">Tips</span>
+                <span class="color__ressources text__taille__span__logo">&</span>
+                <span class="color__new text__taille__span__logo">New's</span>
+            </a>
         </div>
-    </div>
-    <h2>venez ici</h2>
-    <p><a href="">c'est super cool</a></p>
+        <i class="fas fa-bars menu-toggle"></i>
+        <nav>
+            <ul class="nav">
+                <li>
+                    <a href="index" class="bg__home__hover border__bottom_home  text__bold__hover ">
+                        <span class=" text__taille__li__nav">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index" class="bg__new__hover border__bottom__new  text__bold__hover ">
+                        <span class=" text__taille__li__nav">News</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tips" class="bg__tips__hover border__bottom__tips text__bold__hover">
+                        <span class=" text__taille__li__nav">Tips</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ressources" class="bg__ressources__hover border__bottom__ressources text__bold__hover">
+                        <span class=" text__taille__li__nav">Ressources</span>
+                    </a>
+                </li>
+                <!-- <li> <a href="signin">Inscription</a></li> -->
+                <li>
+                    <a href="login" class="bg__connection__hover border__bottom__connection text__bold__hover">
+                        <span class=" text__taille__li__nav">Connexion</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="madmin" class="bg__connection__hover border__bottom__connection text__bold__hover">
+                        <i class="fas fa-user"></i>
+                        <span class="text__taille__li__nav">Laurent</span>
+                        <i class="fas fa-chevron-down chevron"></i>
+                    </a>
+                    <ul class="admin">
+                        <li>
+                            <a href="dashboard">
+                                <span class="text__taille__li__nav__private">
+                                    Admin</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="disconnect" class="logout">
+                                <span class="text__taille__li__nav__private">Déconnexion</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
 </div>
 </div>
 </body>
