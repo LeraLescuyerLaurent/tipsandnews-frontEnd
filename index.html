@@ -5,75 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tips and news | index</title>
     <script src="https://kit.fontawesome.com/81cdd09cfd.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="dist/css/style.css">
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+            <link rel="stylesheet" href="dist/css/style.css">
+    <script src="dist/js/toggleNav.js" defer></script>
 
 </head>
 <body>
-<div class="row">
     <header>
-        <div class="logo ">
+        <div class="logo col-l-11 ">
             <span class="img_logo">
                 <img src="/dist/images/logo.png" alt="">
             </span>
-            <a href="index " class="text_no_decoration">
-                <span class="color_tips  taille_span_logo">Tips</span>
-                <span class="color__ressources text__taille__span__logo">&</span>
-                <span class="color__new text__taille__span__logo">New's</span>
+            <a href="index " class="text_no_decoration pLeft1">
+                <span class="text_tips  text_logo text32">Tips</span>
+                <span class="text_ressources text_logo text32">&</span>
+                <span class="text_news text_logo text32">New's</span>
             </a>
         </div>
-        <i class="fas fa-bars menu-toggle"></i>
+        <i class="fas fa-bars menu-toggle textWhite text30 pRight3"></i>
         <nav>
             <ul class="nav">
-                <li>
-                    <a href="index" class="bg__home__hover border__bottom_home  text__bold__hover ">
-                        <span class=" text__taille__li__nav">Home</span>
+                <li class="lnav ">
+                    <a href="index ">
+                        <span class="textNav_init text18 oswald uppercase textHover_home verticalCenter">Home</span>
                     </a>
                 </li>
-                <li>
-                    <a href="index" class="bg__new__hover border__bottom__new  text__bold__hover ">
-                        <span class=" text__taille__li__nav">News</span>
+                <li class="lnav ">
+                    <a href="index" >
+                        <span class=" textNav_init text18 oswald uppercase textNews_hover">News</span>
                     </a>
                 </li>
-                <li>
-                    <a href="tips" class="bg__tips__hover border__bottom__tips text__bold__hover">
-                        <span class=" text__taille__li__nav">Tips</span>
+                <li class="lnav">
+                    <a href="tips" >
+                        <span class=" textNav_init text18 oswald uppercase textTips_hover">Tips</span>
                     </a>
                 </li>
-                <li>
-                    <a href="ressources" class="bg__ressources__hover border__bottom__ressources text__bold__hover">
-                        <span class=" text__taille__li__nav">Ressources</span>
+                <li class="lnav">
+                    <a href="ressources" >
+                        <span class="textNav_init text18 oswald uppercase textRessources_hover">Ressources</span>
                     </a>
                 </li>
-                <!-- <li> <a href="signin">Inscription</a></li> -->
-                <li>
-                    <a href="login" class="bg__connection__hover border__bottom__connection text__bold__hover">
-                        <span class=" text__taille__li__nav">Connexion</span>
+                <!-- <li class="lnav"> <a href="signin">Inscription</a></li> -->
+                <li class="lnav">
+                    <a href="login" >
+                        <span class="textNav_init text18 oswald uppercase textHover_home">Contact</span>
                     </a>
                 </li>
-                <li>
-                    <a href="#" id="madmin" class="bg__connection__hover border__bottom__connection text__bold__hover">
-                        <i class="fas fa-user"></i>
-                        <span class="text__taille__li__nav">Laurent</span>
-                        <i class="fas fa-chevron-down chevron"></i>
+                <!-- 
+                    <li class="lnav">
+                    <a href="#" id="madmin" >
+                        <span class="textNav_init text18 oswald uppercase textHover_madmin  "> <i class="fas fa-user textWhite pRight1"></i>Laurent <i class="fas fa-chevron-down chevron textWhite pLeft1"></i></span>
                     </a>
                     <ul class="admin">
                         <li>
                             <a href="dashboard">
-                                <span class="text__taille__li__nav__private">
+                                <span class="textNav_init text18 oswald uppercase textHover_home">
                                     Admin</span>
                             </a>
                         </li>
                         <li>
-                            <a href="disconnect" class="logout">
-                                <span class="text__taille__li__nav__private">Déconnexion</span>
+                            <a href="disconnect" class=" ">
+                                <span class="textNav_init text18 oswald uppercase textHover_home">Déconnexion</span>
                             </a>
                         </li>
                     </ul>
                 </li>
+            -->
             </ul>
         </nav>
     </header>
-</div>
-</div>
+    <section class="row bgcred slider">
+            <section class="slideshow-container ">
+                <article id="slideshow" class="slides fade">
+                    <div class="row">
+                        <div class="image-carroussel col-l-14 col-l-pull-1 ">
+                            <img src="dist/images/img4.jpg">
+                        </div>
+                    </div>
+                    <div class="row" >
+                        <div class="titre_categorie col-l-3 col-l-pull-3">
+                            <p class=" categorie_carroussel  pLeft1 ">
+                                <span class="text24 roboto mTop3 mBottom3 textWhite  "> catégorie:tips</span>
+                            </p>
+                        </div>
+                    </div>
+                                <p class="hat-post">
+                                </p>
+                        <!-- espace texte -->
+
+                </article>
+        
+            </section>
+        <br>
+        <article class="dot-list">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </article>
+    </section>
 </body>
 </html>

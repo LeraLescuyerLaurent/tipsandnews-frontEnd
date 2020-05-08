@@ -1,5 +1,14 @@
 @import "compass";
 
+
+@import "padding";
+@import "margin";
 @import "variable";
+@import "texte";
 @import "grille";
 @import "header";
+@import "carroussel";
+
+.bgcred{
+    background-color: red;
+}

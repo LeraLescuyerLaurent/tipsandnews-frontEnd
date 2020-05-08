@@ -1,4 +1,5 @@
 header{
+    text-align: center;
     height: 70px;
     background-color:$fontBlack;
     .logo{
@@ -8,12 +9,142 @@ header{
             .img_logo{
                 height: 70px;
                 width: 70px;
-                margin-left: 20px;
                     img{
                         display: block;
                         height: 100%;
                         width: 100%;
                     }
+            }
+    }
+    .menu-toggle{
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 20px;
+    }
+    .showin {
+
+        height: 100%;
+        overflow: visible;
+    }
+    nav{
+        color: black;
+        background-color: inherit;
+        ul{
+            position: sticky;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0;
+            list-style: none;
+            max-height: 0;
+            overflow: hidden;
+            li{
+                display: block;
+                align-items: center;
+                width: 100%;
+                min-height: 70px;
+                background-color:  $fontBlack;
+                
+                ul{
+                    list-style: none;
+                    width: 100%;
+                    background-color: $fontBlack;
+                    &.admin{
+                        top: 70px;
+                        padding: 0;
+                    }
+                    li{
+                        display: block;
+                        height: 70px;
+                        top: 70px;
+                    }
+                }
+            }
+            a {
+                display: block;
+                height: 70px;
+                text-decoration: none;
+                margin: 0 auto;
+                line-height:70px;
+                text-align: center;
+                border-top: 1px solid $blanc;
+                border-bottom: 1px solid $blanc;
+            }
+            }
+        }
+}
+
+
+@media only screen and (min-width:640px){
+    header{
+        nav{
+            ul{
+                display: flex;
+                flex-direction: row;
+                li{
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width:1024px){
+    header{
+        .menu-toggle{
+            display: none;
+        }
+        .showin {
+            height: 100%;
+            overflow: visible;
+        }
+        nav{
+            right: 0;
+            position: absolute;
+            padding-right: 12px;
+            ul{
+                position: sticky;
+                overflow: visible;
+                li{
+                    display: block;
+                    float: left;
+                    align-items: center;
+                    width:auto;
+                    min-height: 70px;
+                    background-color:  $fontBlack;
+                    width: 120px;
+                    ul{
+                    overflow: hidden;
+
+                        list-style: none;
+                        width: auto;
+                        background-color: $fontBlack;
+                        &.admin{
+                            top: 70px;
+                            padding: 0;
+                        }
+                        .li{
+                            display: block;
+                            height: 70px;
+                            top: 70px;
+                        }
+                    }
+                }
+                a {
+                    display: block;
+                    height: 70px;
+                    text-decoration: none;
+                    margin: 0 auto;
+                    line-height:70px;
+                    text-align: center;
+                    border-top: none;
+                    border-bottom: none;
+                }
+                }
             }
     }
 }

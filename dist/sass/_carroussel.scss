@@ -1,0 +1,45 @@
+.slider{
+    height: 600px;
+    .slideshow-container{
+        position: relative;
+        height: 600px;
+        .slides{
+            height: 600px;
+
+            .image-carroussel{
+                height: 600px;
+                img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .titre_categorie{
+                position: absolute;bottom: 178px;
+                .categorie_carroussel{
+                    position: absolute;
+                    width: 100%;
+                    background-color:rgba($tips, 0.7);
+                    span{
+                        display: block;
+                        height: 20px;
+                    }
+                }
+                .info-article{
+                    position: absolute;
+                    bottom: 12px;
+                }
+            }
+            .content_carroussel{
+                position: absolute;
+                bottom: 45px;
+                background-color:rgba($fontBlack, 0.8);
+                height: 133px;
+                span{
+                    display: block;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@for $i from 0 through 10 {
+    .mLeft#{$i}{
+        margin-left: 6px * $i;
+    }
+    .mRight#{$i}{
+        margin-right: 6px * $i;
+    }
+    .mBottom#{$i}{
+        margin-bottom: 6px * $i;
+    }
+    .mTop#{$i}{
+        margin-top: 6px * $i;
+    }
+}

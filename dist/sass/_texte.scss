@@ -1,12 +1,72 @@
-.text__no__decoration {
+/**IMPORT FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/**FONT FAMILLY */
+.oswald{
+    font-family: Oswald;
+font-style: normal;
+font-weight: normal;
+}
+.roboto{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+}
+/**TEXTE TRANSFORME */
+.uppercase{text-transform: uppercase;}
+.text_no_decoration {
     text-decoration: inherit;
 }
-
-
+/**TAILLE TEXTE */
+.text18{
+    font-size: 18px;
+    line-height: 18px;
+}
+.text24{ 
+    font-size: 24px;
+    line-height: 24px;
+}
+.text32{
+    line-height: 60px;
+    font-size: 32px;
+}
 /**COULEURS TEXTES */
-.color__tips {
+.text_tips {
     color: $tips;
 }
-.taille__span__logo{
-    font-size: 32px;
+.text_ressources{
+    color:$ressources;
+}
+.text_news{
+    color:$news;
+}
+.textNav_init{
+    font-family: Oswald;
+
+    color:$blanc;
+}
+.textWhite{
+    color:$blanc;
+}
+
+/**COULEUR TEXTE HOVER */
+.textHover_home:hover{
+    color:$red;
+}
+.textTips_hover:hover {
+    color: $tips;
+}
+.textRessources_hover:hover{
+    color:$ressources;
+}
+.textNews_hover:hover{
+    color:$news;
+}
+.textHover_madmin:hover,.textHover_madmin:hover i {color:$red;}
+/**TAILLE TEXTES */
+.text_logo{
+    display: inline-block;
+    height: 60px;
+
 }

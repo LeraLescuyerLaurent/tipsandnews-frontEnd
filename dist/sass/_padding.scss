@@ -1,0 +1,14 @@
+@for $i from 0 through 10 {
+    .pLeft#{$i}{
+        padding-left: 6px * $i;
+    }
+    .pRight#{$i}{
+        padding-right: 6px * $i;
+    }
+    .pBottom#{$i}{
+        padding-bottom: 6px * $i;
+    }
+    .pTop#{$i}{
+        padding-top: 6px * $i;
+    }
+}
