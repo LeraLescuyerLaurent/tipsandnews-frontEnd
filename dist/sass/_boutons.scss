@@ -1,0 +1,29 @@
+button{
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 18px 0 12px 0;
+}
+.btn{
+    display: block;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+    padding: 16px 25px;
+    justify-content: center;
+    border-radius: 4px;
+}
+.btn_tips{
+    background-color: $tips;
+    
+}
+.btn_news{
+    background-color: $news;
+    
+}
+.btn_ressource{
+    background-color: $ressources;
+    
+}

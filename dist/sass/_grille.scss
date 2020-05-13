@@ -6,9 +6,10 @@
     margin: 0;
 }
 $columns: 16!default;
-$gutter:20px!default;
-$large: 1024px!default;
+$gutter:12px!default;
 $medium:640px!default;
+$large: 1024px!default;
+$extraLarge: 1500px!default;
 /**Extend */
 %col{
     float: left;
@@ -21,22 +22,26 @@ $medium:640px!default;
     .col#{$suffix}-center{margin: 0 auto;float: none; }
     @for $i from 0 through $columns {
         @if $i !=0{ 
-        .col#{$suffix}-#{$i}{ width: $i / $columns * 100%; }
+        .col#{$suffix}-#{$i}{ width: $i / $columns * 100vw; }
         }
         .col#{$suffix}-push-#{$i}{left: $i / $columns *100%}
         .col#{$suffix}-pull-#{$i}{left: $i / $columns *100%}
+        .col#{$suffix}-hide{display:none}
+        .col#{$suffix}-show{display:block}
         .height#{$suffix}-#{$i}{
             height:$i / $columns * 100vw;
-        }
+        } 
     }
 }
 /**Retir la marge left et right */
 .row{
-    margin: 0 $gutter * -0.5;
+    width: 100vw;
     @include clearfix;
     .row{
-        margin: 0 $gutter * -0.5;
-        @include clearfix;
+        width: 100vw;
+    margin: 0 $gutter * -0.5;
+
+    @include clearfix;
     }
 }
 /**Creation des columns pour ecrant inferieur à medium */
@@ -54,4 +59,8 @@ $medium:640px!default;
 /** Ecrants large (supperieur à la valeur de $large) */
 @media only screen and (min-width: $large){
     @include responsive-columns('-l');
+}
+/** Ecrants large (supperieur à la valeur de $extra-large) */
+@media only screen and (min-width: $extraLarge){
+    @include responsive-columns('-xl');
 }

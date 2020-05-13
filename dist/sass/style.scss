@@ -1,14 +1,30 @@
 @import "compass";
 
 
-@import "padding";
+@import "reset";
+@import "padding"; 
 @import "margin";
 @import "variable";
-@import "texte";
+@import "texte"; 
 @import "grille";
 @import "header";
 @import "carroussel";
+@import "card";
+@import "sidebarre";
+@import "boutons";
 
 .bgcred{
     background-color: red;
+}
+.bgcgreen{
+    background-color: green,;
+}
+section.container{
+    position: relative;
+    margin-top: 12px;
+    padding:0 ;
+    margin: 0;
+}
+.principal{
+    display: flex;
 }
