@@ -16,7 +16,10 @@
                 bottom: 40px;
                 .categorie_carroussel{
                     height: 56px;
-                    background-color: rgba($tips,0.70);
+                    
+                    .bgc-ressources{
+                        background-color: $ressources;
+                    }
                     span{
                         display: block;
                     }
@@ -29,9 +32,20 @@
             &:hover .categorie_content h1.tips{
                 color: $tips;
             }
-            &:hover .bgc-tips {
+            &:hover .bgc_tips_light {
                 background-color: rgba($tips,0.90);
-
+            }
+            &:hover .categorie_content h1.news{
+                color: $news;
+            }
+            &:hover .bgc_ressources_light {
+                background-color: rgba($ressources,0.90);
+            }
+            &:hover .categorie_content h1.ressources{
+                color: $ressources;
+            }
+            &:hover .bgc_ressources_light {
+                background-color: rgba($ressources,0.90);
             }
         }
     }

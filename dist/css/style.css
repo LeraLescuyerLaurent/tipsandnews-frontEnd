@@ -11365,69 +11365,88 @@ header nav ul a {
 /* line 17, ../sass/_carroussel.scss */
 .slider .slideshow-container .slides .content_carroussel .categorie_carroussel {
   height: 56px;
-  background-color: rgba(69, 170, 242, 0.7);
 }
 /* line 20, ../sass/_carroussel.scss */
+.slider .slideshow-container .slides .content_carroussel .categorie_carroussel .bgc-ressources {
+  background-color: #fa8231;
+}
+/* line 23, ../sass/_carroussel.scss */
 .slider .slideshow-container .slides .content_carroussel .categorie_carroussel span {
   display: block;
 }
-/* line 24, ../sass/_carroussel.scss */
+/* line 27, ../sass/_carroussel.scss */
 .slider .slideshow-container .slides .content_carroussel .categorie_content {
   background-color: rgba(54, 54, 54, 0.8);
 }
-/* line 29, ../sass/_carroussel.scss */
+/* line 32, ../sass/_carroussel.scss */
 .slider .slideshow-container .slides:hover .categorie_content h1.tips {
   color: #45AAF2;
 }
-/* line 32, ../sass/_carroussel.scss */
-.slider .slideshow-container .slides:hover .bgc-tips {
+/* line 35, ../sass/_carroussel.scss */
+.slider .slideshow-container .slides:hover .bgc_tips_light {
   background-color: rgba(69, 170, 242, 0.9);
+}
+/* line 38, ../sass/_carroussel.scss */
+.slider .slideshow-container .slides:hover .categorie_content h1.news {
+  color: #8854D0;
+}
+/* line 41, ../sass/_carroussel.scss */
+.slider .slideshow-container .slides:hover .bgc_ressources_light {
+  background-color: rgba(250, 130, 49, 0.9);
+}
+/* line 44, ../sass/_carroussel.scss */
+.slider .slideshow-container .slides:hover .categorie_content h1.ressources {
+  color: #fa8231;
+}
+/* line 47, ../sass/_carroussel.scss */
+.slider .slideshow-container .slides:hover .bgc_ressources_light {
+  background-color: rgba(250, 130, 49, 0.9);
 }
 
 @media only screen and (min-width: 1024px) {
-  /* line 41, ../sass/_carroussel.scss */
+  /* line 55, ../sass/_carroussel.scss */
   .slider {
     height: 600px;
   }
-  /* line 43, ../sass/_carroussel.scss */
+  /* line 57, ../sass/_carroussel.scss */
   .slider .slideshow-container {
     height: 600px;
   }
-  /* line 45, ../sass/_carroussel.scss */
+  /* line 59, ../sass/_carroussel.scss */
   .slider .slideshow-container .slides {
     height: 600px;
   }
-  /* line 47, ../sass/_carroussel.scss */
+  /* line 61, ../sass/_carroussel.scss */
   .slider .slideshow-container .slides .image-carroussel {
     height: 600px;
   }
-  /* line 50, ../sass/_carroussel.scss */
+  /* line 64, ../sass/_carroussel.scss */
   .slider .slideshow-container .slides .content_carroussel {
     bottom: 47px;
   }
-  /* line 53, ../sass/_carroussel.scss */
+  /* line 67, ../sass/_carroussel.scss */
   .slider .slideshow-container .slides:hover .categorie_content h1.tips {
     color: #45AAF2;
   }
 }
 @media only screen and (min-width: 1500px) {
-  /* line 61, ../sass/_carroussel.scss */
+  /* line 75, ../sass/_carroussel.scss */
   .slider {
     height: 800px;
   }
-  /* line 63, ../sass/_carroussel.scss */
+  /* line 77, ../sass/_carroussel.scss */
   .slider .slideshow-container {
     height: 800px;
   }
-  /* line 65, ../sass/_carroussel.scss */
+  /* line 79, ../sass/_carroussel.scss */
   .slider .slideshow-container .slides {
     height: 800px;
   }
-  /* line 67, ../sass/_carroussel.scss */
+  /* line 81, ../sass/_carroussel.scss */
   .slider .slideshow-container .slides .image-carroussel {
     height: 800px;
   }
-  /* line 70, ../sass/_carroussel.scss */
+  /* line 84, ../sass/_carroussel.scss */
   .slider .slideshow-container .slides:hover .categorie_content h1.tips {
     color: #45AAF2;
   }
@@ -12077,17 +12096,47 @@ input[type=submit]:hover {
     margin-left: 20px;
   }
 }
-/* line 25, ../sass/style.scss */
+/* line 26, ../sass/style.scss */
+.bgc-tips {
+  background-color: #45AAF2;
+}
+
+/* line 29, ../sass/style.scss */
+.bgc-news {
+  background-color: #8854D0;
+}
+
+/* line 32, ../sass/style.scss */
+.bgc-ressources {
+  background-color: #fa8231;
+}
+
+/* line 35, ../sass/style.scss */
+.bgc_tips_light {
+  background-color: rgba(69, 170, 242, 0.7);
+}
+
+/* line 38, ../sass/style.scss */
+.bgc_news_light {
+  background-color: rgba(136, 84, 208, 0.7);
+}
+
+/* line 41, ../sass/style.scss */
+.bgc_ressources_light {
+  background-color: rgba(250, 130, 49, 0.7);
+}
+
+/* line 44, ../sass/style.scss */
 .bgcred {
   background-color: red;
 }
 
-/* line 28, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
 .bgcgreen {
   background-color: green;
 }
 
-/* line 31, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 section.container {
   position: relative;
   margin-top: 12px;
@@ -12095,12 +12144,12 @@ section.container {
   margin: 0;
 }
 
-/* line 37, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 .principal {
   display: flex;
 }
 
-/* line 40, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
 .circle {
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -12109,24 +12158,9 @@ section.container {
   -o-border-radius: 50%;
 }
 
-/* line 48, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 .center_icon {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-/* line 53, ../sass/style.scss */
-.bgc-tips {
-  background-color: #45AAF2;
-}
-
-/* line 56, ../sass/style.scss */
-.bgc-news {
-  background-color: #8854D0;
-}
-
-/* line 59, ../sass/style.scss */
-.bgc-ressources {
-  background-color: #fa8231;
 }

@@ -1,6 +1,7 @@
 @import "compass";
 
 
+
 @import "reset";
 @import "padding"; 
 @import "margin";
@@ -22,6 +23,24 @@
 @import "populaires_posts";
 @import "categorie_sidebare";
 
+.bgc-tips{
+    background-color: $tips;
+}
+.bgc-news{
+    background-color: $news;
+}
+.bgc-ressources{
+    background-color: $ressources;
+}
+.bgc_tips_light{
+    background-color: rgba($tips,0.70);
+}
+.bgc_news_light{
+    background-color: rgba($news,0.70);
+}
+.bgc_ressources_light{
+    background-color: rgba($ressources,0.70);
+}
 .bgcred{
     background-color: red;
 }
@@ -49,13 +68,4 @@ section.container{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.bgc-tips{
-    background-color: $tips;
-}
-.bgc-news{
-    background-color: $news;
-}
-.bgc-ressources{
-    background-color: $ressources;
 }
