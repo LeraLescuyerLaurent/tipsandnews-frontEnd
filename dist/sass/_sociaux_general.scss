@@ -64,10 +64,12 @@
 }
 @media only screen and (min-width: $large){
     .sociaux_general{
-        margin: 12px 0;
-        padding: 12px 0 12px 0;
+        top: 50px;
+
+        margin: 6px 0 12px 0;
+        padding: 6px 0 12px 0;
         .resaux{
-            padding: 12px 0 12px 0;
+            padding: 6px 0 12px 0;
             .facebook{
             margin: 0 1px 0 1px;
                 max-width: 48px;

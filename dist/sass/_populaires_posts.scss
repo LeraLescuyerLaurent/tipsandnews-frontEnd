@@ -26,6 +26,8 @@ a{
 }
 @media only screen and (min-width: $large){
     .populaires_posts{
+        margin: 12px 0;
+        padding: 12px 0;
     a{
         float: none;
         display: flex;
