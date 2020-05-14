@@ -12,6 +12,15 @@
 @import "card";
 @import "sidebarre";
 @import "boutons";
+@import "form";
+
+/** SIDE BARRE GAUCHE  */
+
+@import "profilCard";
+@import "recherche";
+@import "sociaux_general";
+@import "populaires_posts";
+@import "categorie_sidebare";
 
 .bgcred{
     background-color: red;
@@ -27,4 +36,26 @@ section.container{
 }
 .principal{
     display: flex;
+}
+.circle{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.center_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bgc-tips{
+    background-color: $tips;
+}
+.bgc-news{
+    background-color: $news;
+}
+.bgc-ressources{
+    background-color: $ressources;
 }

@@ -5,9 +5,44 @@
 /**TEXT TITRE */
 h1{
     padding: 6px 0 ;
-font-size: 28px;
-line-height: 28px;
-font-family:'Oswald', sans-serif;
+    font-size: 28px;
+    line-height: 28px;
+    font-family:'Oswald', sans-serif;
+}
+h2{
+    padding: 6px 0 ;
+    font-size: 24px;
+    line-height: 24px;
+    font-family:'Oswald', sans-serif;  
+    color: #343434;
+}
+h3{
+    padding: 6px 0 ;
+    font-size: 20px;
+    line-height: 20px;
+    font-family:'Oswald', sans-serif;  
+    color: #343434;
+}
+h4{
+    padding: 2px 0 ;
+    font-size: 18px;
+    line-height: 18px;
+    font-family:'Oswald', sans-serif;  
+    color: #444444;
+}
+h5{
+    padding: 2px 0 ;
+    font-size: 16px;
+    line-height: 16px;
+    font-family:'Oswald', sans-serif;  
+    color: #444444;
+}
+h6{
+    padding: 2px 0 ;
+    font-size: 14px;
+    line-height: 14px;
+    font-family:'Oswald', sans-serif;  
+    color: #444444;
 }
 p{
     font-family: 'Playfair Display' , sans-serif;
@@ -15,15 +50,15 @@ p{
     font-weight: normal;
     font-size: 18px;
     line-height: 18px;
-        padding: 3px 0;
-        text-align: justify;
+    padding: 3px 0;
+    text-align: justify;
 }
 /**FONT FAMILLY */
 .oswald{
     font-family:'Oswald', sans-serif;
-font-style: normal;
-font-weight: normal;
-padding: 0;margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    padding: 0;margin: 0;
 }
 .roboto{
     font-family: Roboto;
@@ -38,9 +73,7 @@ padding: 0;margin: 0;
 }
 /**TEXTE TRANSFORME */
 .uppercase{text-transform: uppercase;}
-.text_no_decoration {
-    text-decoration: inherit;
-}
+.text_no_decoration {text-decoration: inherit;}
 /**TAILLE TEXTE */
 .text18{
     font-size: 18px;
@@ -55,41 +88,25 @@ padding: 0;margin: 0;
     font-size: 32px;
 }
 /**COULEURS TEXTES */
-.text_tips {
-    color: $tips;
-}
-.text_ressources{
-    color:$ressources;
-}
-.text_news{
-    color:$news;
+.text_tips {color: $tips;}
+.text_ressources{color:$ressources;}
+.text_news{color:$news;}
+.text_red{
+    color: #DA4453;
 }
 .textNav_init{
     font-family: Oswald;
-
     color:$blanc;
 }
-.textWhite{
-    color:$blanc;
-}
-
+.textWhite{color:$blanc;}
 /**COULEUR TEXTE HOVER */
-.textHover_home:hover{
-    color:$red;
-}
-.textTips_hover:hover {
-    color: $tips;
-}
-.textRessources_hover:hover{
-    color:$ressources;
-}
-.textNews_hover:hover{
-    color:$news;
-}
+.textHover_home:hover{color:$red;}
+.textTips_hover:hover {color: $tips;}
+.textRessources_hover:hover{color:$ressources;}
+.textNews_hover:hover{color:$news;}
 .textHover_madmin:hover,.textHover_madmin:hover i {color:$red;}
 /**TAILLE TEXTES */
 .text_logo{
     display: inline-block;
     height: 60px;
-
 }

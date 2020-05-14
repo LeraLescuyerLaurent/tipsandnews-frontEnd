@@ -1,3 +1,13 @@
 .sidebare{
-    background-color: blue;
+    margin: 12px 0;
+    //background-color: blue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+@media only screen and (min-width: $large){
+    .sidebare{
+        margin: 0;
+
+    }
 }

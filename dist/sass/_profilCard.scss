@@ -1,0 +1,72 @@
+.profil{
+    border: 1px solid #dadada;
+    padding: 12px 0 12px 6px;
+    margin-left: -6px;
+    .profil_image{
+        float: left;
+        padding: 0;
+        border-radius: 50%;
+        img{
+        margin: 12px 0;
+
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+    }
+    .info_profil{
+        padding: 0 0 0 6px;
+    }
+}
+@media only screen and (min-width: $medium){
+    .profil{
+        .profil_image{
+            img{
+                margin: 0 ;
+            }
+        }
+        .info_profil{
+            padding: 0 0 0 6px;
+        }
+    }
+}
+@media only screen and (min-width: $large){
+    .profil{
+    padding: 12px 0 12px 0;
+        height: 240px; 
+        top: 60px;
+        .profil_image{
+            float: none;
+            top: -60px;
+            img{
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .info_profil{
+            top: -60px;
+            padding: 0 6px 0 6px;
+            text-align: center;
+        }
+    }
+}
+@media only screen and (min-width: $extraLarge){
+    .profil{
+        height: 300px;
+        .info_profil{
+            top: -60px;
+            padding: 0 6px 0 6px;
+            text-align: center;
+            p{
+                text-align: center;
+            }
+        }
+    }
+}

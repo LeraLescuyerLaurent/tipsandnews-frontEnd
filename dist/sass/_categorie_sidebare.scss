@@ -1,0 +1,38 @@
+.categorie_sidebare{
+    padding: 12px 0 12px 0;
+    .categorie{
+        border-bottom: 1px solid #F2F2F2;
+        height: 50px;
+        padding: 6px 0 6px 0;
+        .categorie_name{
+            float: left;
+            padding: 10px 0;
+            display: block;
+            height: 35px;
+        }
+        .categorie_count{
+            float: left;
+            border-radius: 5px;
+            padding: 10px 0;
+            text-align: center;
+            display: block;
+            height: 35px;
+            left: 0;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+        }
+    }
+}
+@media only screen and (min-width: $extraLarge){
+    .categorie_sidebare{
+        top: 40px;
+        .categorie{
+            .categorie_count{
+                max-width: 50px;
+                margin-left: 20px;
+            }
+        }
+    }
+}

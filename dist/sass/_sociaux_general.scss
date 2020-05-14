@@ -1,0 +1,211 @@
+.sociaux_general{
+    padding: 12px 0 12px 0;
+    .resaux{
+        display: flex;
+        padding: 12px 0 12px 0;
+        .facebook{
+        margin: 0 12px 0 12px;
+
+            border: 1px solid #4267B2;
+            font-size: 20px;
+            a{
+                color: #4267B2;
+            }
+            &:hover{
+                background-color:#4267B2;
+            }
+            &:hover a {
+                color:white
+            }
+        }
+        .twiter{
+            margin: 0 12px 0 12px;
+            border: 1px solid #1DA1F2;
+            font-size: 20px;
+            a{
+                color: #1DA1F2;
+            }
+            &:hover{
+                background-color:#1DA1F2;
+            }
+            &:hover a {
+                color:white
+            }
+        }
+        .linkedin{
+            margin: 0 12px 0 12px;
+            border: 1px solid #0073B0;
+            font-size: 20px;
+            a{
+                color: #0073B0;
+            }
+            &:hover{
+                background-color:#0073B0;
+            }
+            &:hover a {
+                color:white
+            }
+        }
+        .git{
+            margin: 0 12px 0 12px;
+            border: 1px solid #000000;
+            font-size: 20px;
+            a{
+                color: #000000;
+            }
+            &:hover{
+                background-color:#000000;
+            }
+            &:hover a {
+                color:white
+            }
+        }
+    }
+}
+@media only screen and (min-width: $large){
+    .sociaux_general{
+        margin: 12px 0;
+        padding: 12px 0 12px 0;
+        .resaux{
+            padding: 12px 0 12px 0;
+            .facebook{
+            margin: 0 1px 0 1px;
+                max-width: 48px;
+                max-height: 48px;
+                border: 1px solid #4267B2;
+                font-size: 30px;
+                a{
+                    color: #4267B2;
+                }
+                &:hover{
+                    background-color:#4267B2;
+                }
+                &:hover a {
+                    color:white
+                }
+            }
+            .twiter{
+                max-width: 48px;
+                max-height: 48px;
+                margin: 0 1px 0 1px;
+                border: 1px solid #1DA1F2;
+                font-size: 30px;
+                a{
+                    color: #1DA1F2;
+                }
+                &:hover{
+                    background-color:#1DA1F2;
+                }
+                &:hover a {
+                    color:white
+                }
+            }
+            .linkedin{
+                max-width: 48px;
+                max-height: 48px;
+                margin: 0 1px 0 1px;
+                border: 1px solid #0073B0;
+                font-size: 30px;
+                a{
+                    color: #0073B0;
+                }
+                &:hover{
+                    background-color:#0073B0;
+                }
+                &:hover a {
+                    color:white
+                }
+            }
+            .git{
+                max-width: 48px;
+                max-height: 48px;
+                margin: 0 1px 0 1px;
+                border: 1px solid #000000;
+                font-size: 30px;
+                a{
+                    color: #000000;
+                }
+                &:hover{
+                    background-color:#000000;
+                }
+                &:hover a {
+                    color:white
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: $extraLarge){
+    .sociaux_general{
+        top: 60px;
+        margin: 6px 0;
+        padding: 6px 0 6px 0;
+        .resaux{
+            padding: 12px 0 12px 0;
+            .facebook{
+            margin: 0 12px 0 12px;
+                max-width: 48px;
+                max-height: 48px;
+                border: 1px solid #4267B2;
+                font-size: 30px;
+                a{
+                    color: #4267B2;
+                }
+                &:hover{
+                    background-color:#4267B2;
+                }
+                &:hover a {
+                    color:white
+                }
+            }
+            .twiter{
+                max-width: 48px;
+                max-height: 48px;
+                margin: 0 12px 0 12px;
+                border: 1px solid #1DA1F2;
+                font-size: 30px;
+                a{
+                    color: #1DA1F2;
+                }
+                &:hover{
+                    background-color:#1DA1F2;
+                }
+                &:hover a {
+                    color:white
+                }
+            }
+            .linkedin{
+                max-width: 48px;
+                max-height: 48px;
+                margin: 0 12px 0 12px;
+                border: 1px solid #0073B0;
+                font-size: 30px;
+                a{
+                    color: #0073B0;
+                }
+                &:hover{
+                    background-color:#0073B0;
+                }
+                &:hover a {
+                    color:white
+                }
+            }
+            .git{
+                max-width: 48px;
+                max-height: 48px;
+                margin: 0 12px 0 12px;
+                border: 1px solid #000000;
+                font-size: 30px;
+                a{
+                    color: #000000;
+                }
+                &:hover{
+                    background-color:#000000;
+                }
+                &:hover a {
+                    color:white
+                }
+            }
+        }
+    }
+}

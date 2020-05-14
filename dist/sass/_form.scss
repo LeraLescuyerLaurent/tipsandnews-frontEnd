@@ -1,0 +1,30 @@
+input[type=text], select, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    resize: vertical;
+  }
+  input[type=text]{
+      height: 35px;
+  }
+  label {
+      font-size: 14px;
+      line-height: 14px;
+    font-family:'Oswald', sans-serif; 
+    text-transform: uppercase; 
+    font-style: normal;
+    font-weight: normal;
+    color: #343434;
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    height: 35px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
