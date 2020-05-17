@@ -1,10 +1,18 @@
-input[type=text], select, textarea {
+input[type=text],input[type=email] , input[type=password] {
     padding: 12px;
     border: 1px solid #ccc;
+    height: 35px;
     resize: vertical;
+    font-size: 18px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+ 
   }
-  input[type=text]{
-      height: 35px;
+  textarea{
+    font-size: 18px;
+    padding: 0 0 24px 0 ;
+
   }
   label {
       font-size: 14px;
@@ -15,7 +23,7 @@ input[type=text], select, textarea {
     font-weight: normal;
     color: #343434;
     padding: 12px 12px 12px 0;
-    display: inline-block;
+    display: flex;
   }
   
   input[type=submit] {

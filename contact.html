@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips and news | contact</title>
+    <script src="https://kit.fontawesome.com/81cdd09cfd.js" crossorigin="anonymous" defer></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+            <link rel="stylesheet" href="dist/css/style.css">
+    <script src="dist/js/toggleNav.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="logo ">
+            <span class="img_logo">
+                <img src="/dist/images/logo.png" alt="logo tips and news">
+            </span>
+            <a href="index " class="text_no_decoration pLeft1">
+                <span class="text_tips  text_logo text32">Tips</span>
+                <span class="text_ressources text_logo text32">&</span>
+                <span class="text_news text_logo text32">New's</span>
+            </a>
+        </div>
+        <i class="fas fa-bars menu-toggle textWhite text30 pRight3"></i>
+        <nav>
+            <ul class="nav">
+                <li class="lnav ">
+                    <a href="index ">
+                        <span class="textNav_init text18 oswald uppercase textHover_home verticalCenter">Home</span>
+                    </a>
+                </li>
+                <li class="lnav ">
+                    <a href="index" >
+                        <span class=" textNav_init text18 oswald uppercase textNews_hover">News</span>
+                    </a>
+                </li>
+                <li class="lnav">
+                    <a href="tips" >
+                        <span class=" textNav_init text18 oswald uppercase textTips_hover">Tips</span>
+                    </a>
+                </li>
+                <li class="lnav">
+                    <a href="ressources" >
+                        <span class="textNav_init text18 oswald uppercase textRessources_hover">Ressources</span>
+                    </a>
+                </li>
+                <!-- <li class="lnav"> <a href="signin">Inscription</a></li> -->
+                <li class="lnav">
+                    <a href="login" >
+                        <span class="textNav_init text18 oswald uppercase textHover_home">Contact</span>
+                    </a>
+                </li>
+                    <li class="lnav">
+                    <a href="#" id="madmin" >
+                        <span class="textNav_init text18 oswald uppercase textHover_admin  "> <i class="fas fa-user textWhite pRight1"></i>Laurent <i class="fas fa-chevron-down chevron textWhite pLeft1"></i></span>
+                    </a>
+                    <ul class="admin">
+                        <li>
+                            <a href="dashboard">
+                                <span class="textNav_init text18 oswald uppercase textHover_admin">
+                                    Admin</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="disconnect" class=" ">
+                                <span class="textNav_init text18 oswald uppercase textHover_deconnect">Déconnexion</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="row">
+        <section class="container col-14 col-m-14 col-l-14 col-xl-14 col-push-1 col-m-push-1 col-l-push-2 col-xl-push-3">
+            <section class=" principal col-14 col-m-14 col-l-14 col-xl-14">
+                <div class="row">
+                    <section class="contact col-14 col-m-14 col-l-14 col-xl-14">
+                        <div class="row">
+                            <h1 class="uppercase">Contactez-moi</h1>
+                            <form action="" class="col-11 col-m-11 col-l-11 col-xl-11">
+                                    <label for="titre">titre</label>
+                                    <input type="text" name="titre" id="titre" class="col-11 col-m-11 col-l-11 col-xl-11">
+                                    <label for="nom" >Votre nom</label>
+                                    <input type="text" name="nom" id="nom" class="col-11 col-m-11 col-l-11 col-xl-11 ">
+                                    <label for="email"  >Votre email</label>
+                                    <input type="email" name="email" id="email" class="col-11 col-m-11 col-l-11 col-xl-11">
+                                    <label for="commentaire"   >Votre message</label>
+                                    <textarea name="commentaire" id="commentaire" class="col-11 col-m-13 col-l-13  col-xl-11 height-6 height-m-3 height-l-3" >
+                                    </textarea>
+                            </div>
+                            <button class="uppercase primaire btn">envoyer</button>
+                            </form>
+                        </section>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </body>
+    </html>

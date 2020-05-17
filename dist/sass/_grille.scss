@@ -24,8 +24,8 @@ $extraLarge: 1500px!default;
         @if $i !=0{ 
         .col#{$suffix}-#{$i}{ width: $i / $columns * 100vw; }
         }
-        .col#{$suffix}-push-#{$i}{left: $i / $columns *100%}
-        .col#{$suffix}-pull-#{$i}{left: $i / $columns *100%}
+        .col#{$suffix}-push-#{$i}{left: $i / $columns *100vw}
+        .col#{$suffix}-pull-#{$i}{left: $i / $columns *100vw}
         .col#{$suffix}-hide{display:none}
         .col#{$suffix}-show{display:block}
         .height#{$suffix}-#{$i}{
@@ -35,7 +35,6 @@ $extraLarge: 1500px!default;
 }
 /**Retir la marge left et right */
 .row{
-    width: 100vw;
     @include clearfix;
     .row{
         width: 100vw;

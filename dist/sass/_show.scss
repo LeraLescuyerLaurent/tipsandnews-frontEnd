@@ -1,0 +1,91 @@
+.show{
+    margin: 24px 0 12px 0;
+    height: auto;
+    .info_show_article{
+       color: rgba(0, 0, 0, 0.541);
+       margin: 0 0 9px 0;
+    }
+    .image{
+        padding: 12px 0;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    blockquote{
+        font-size: 32px;
+        font-family:'Oswald', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        display: block;
+        padding:24px 42px  ;
+        margin: 24px 0;
+        background-color: rgba(128, 128, 128, 0.548);
+        color: white;
+    }
+}
+.info_show_comment{
+    font-size: 14px;
+    color: #696969;
+}
+.comments{
+    margin-top: 12px;
+    padding-top: 24px;
+    input[type=text],input[type=email]{
+        width: 100%;
+    }
+}
+.image_une{
+    height: 300px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+.comments_list{
+    display: block;
+    margin: 12px 0;
+    border-bottom: 1px solid #696969;
+    border-top: 1px solid #696969;
+    p{
+        padding-bottom: 12px;
+        word-break: break-all;
+        overflow-wrap: break-word;
+    }
+}
+.partage{
+    margin: 12px 0;
+
+}
+.image-carroussel img{
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (min-width: $medium){
+    .image_une{
+        height: 300px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+}
+@media only screen and (min-width: $large){
+    .image_une{
+        height: 600px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+}
+
+@media only screen and (min-width: $extraLarge){
+    .image_une{
+        height: 800px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+}

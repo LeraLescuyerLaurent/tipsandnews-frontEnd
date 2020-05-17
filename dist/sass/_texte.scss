@@ -46,11 +46,12 @@ h6{
 }
 p{
     font-family: 'Playfair Display' , sans-serif;
+    overflow-wrap: break-word;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 18px;
-    padding: 3px 0;
+    padding: 3px 12px 3px 6px;
     text-align: justify;
 }
 /**FONT FAMILLY */
@@ -61,7 +62,7 @@ p{
     padding: 0;margin: 0;
 }
 .roboto{
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
 }

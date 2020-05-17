@@ -1,4 +1,4 @@
-.sociaux_general{
+.partage,.sociaux_general{
     padding: 12px 0 12px 0;
     .resaux{
         display: flex;
@@ -63,7 +63,7 @@
     }
 }
 @media only screen and (min-width: $large){
-    .sociaux_general{
+    .partage, .sociaux_general{
         top: 50px;
 
         margin: 6px 0 12px 0;
@@ -138,7 +138,7 @@
     }
 }
 @media only screen and (min-width: $extraLarge){
-    .sociaux_general{
+    .partage, .sociaux_general{
         top: 60px;
         margin: 6px 0;
         padding: 6px 0 6px 0;
@@ -177,6 +177,7 @@
                 }
             }
             .linkedin{
+
                 max-width: 48px;
                 max-height: 48px;
                 margin: 0 12px 0 12px;
@@ -193,6 +194,8 @@
                 }
             }
             .git{
+            margin: 0 12px 0 12px;
+
                 max-width: 48px;
                 max-height: 48px;
                 margin: 0 12px 0 12px;

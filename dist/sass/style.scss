@@ -23,6 +23,11 @@
 @import "populaires_posts";
 @import "categorie_sidebare";
 
+
+/**PAGE SHOW ARTICLE */
+@import "show";
+@import "contact";
+
 .bgc-tips{
     background-color: $tips;
 }
@@ -56,6 +61,7 @@ section.container{
 .principal{
     display: flex;
 }
+
 .circle{
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -68,4 +74,14 @@ section.container{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.primaire{
+    background-color: #89cfef;
+    color: #fff;
+    &:hover{
+        color:#89cfef;
+        background-color: #fff;
+        border: 1px solid #89cfef;
+    }
 }
