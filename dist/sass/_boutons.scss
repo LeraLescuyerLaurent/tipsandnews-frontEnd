@@ -5,12 +5,14 @@ button{
     cursor: pointer;
 }
 .btn{
+    box-sizing: border-box;
     display: block;
     font-family: Oswald;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 12px;
+
     text-transform: uppercase;
     padding: 16px 25px;
     justify-content: center;
@@ -18,14 +20,30 @@ button{
 }
 .btn_tips{
     background-color: $tips;
+    color: $blanc;
+    &:hover{
+        background-color: $blanc;
+        color: $tips;
+    }
     
 }
 .btn_news{
     background-color: $news;
+    color: $blanc;
+    &:hover{
+    background-color: $news;
+        background-color: $blanc;
+        color: $news;
+    }
     
 }
 .btn_ressource{
+    color: $blanc;
     background-color: $ressources;
+    &:hover{
+        background-color: $blanc;
+        color: $ressources;
+    }
 }
 .picto{
 float: left;

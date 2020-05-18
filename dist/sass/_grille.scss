@@ -37,8 +37,8 @@ $extraLarge: 1500px!default;
 .row{
     @include clearfix;
     .row{
-        width: 100vw;
-    margin: 0 $gutter * -0.5;
+        margin: 0 $gutter * -0.5;
+    width: 100vw;
     @include clearfix;
     }
 }

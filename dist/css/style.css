@@ -937,8 +937,8 @@ p {
 }
 /* line 39, ../sass/_grille.scss */
 .row .row {
-  width: 100vw;
   margin: 0 -6px;
+  width: 100vw;
   overflow: hidden;
   *zoom: 1;
 }
@@ -11497,6 +11497,10 @@ header nav ul a {
 .card .content .info_article {
   color: #6B6B6B;
   padding: 0 0 3px 0;
+  font-size: 12px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
 }
 
 /* line 1, ../sass/_sidebarre.scss */
@@ -11523,6 +11527,7 @@ button {
 
 /* line 7, ../sass/_boutons.scss */
 .btn {
+  box-sizing: border-box;
   display: block;
   font-family: Oswald;
   font-style: normal;
@@ -11535,22 +11540,41 @@ button {
   border-radius: 4px;
 }
 
-/* line 19, ../sass/_boutons.scss */
+/* line 21, ../sass/_boutons.scss */
 .btn_tips {
   background-color: #45AAF2;
+  color: #FFF9F9;
 }
-
-/* line 23, ../sass/_boutons.scss */
-.btn_news {
-  background-color: #8854D0;
-}
-
-/* line 27, ../sass/_boutons.scss */
-.btn_ressource {
-  background-color: #fa8231;
+/* line 24, ../sass/_boutons.scss */
+.btn_tips:hover {
+  background-color: #FFF9F9;
+  color: #45AAF2;
 }
 
 /* line 30, ../sass/_boutons.scss */
+.btn_news {
+  background-color: #8854D0;
+  color: #FFF9F9;
+}
+/* line 33, ../sass/_boutons.scss */
+.btn_news:hover {
+  background-color: #8854D0;
+  background-color: #FFF9F9;
+  color: #8854D0;
+}
+
+/* line 40, ../sass/_boutons.scss */
+.btn_ressource {
+  color: #FFF9F9;
+  background-color: #fa8231;
+}
+/* line 43, ../sass/_boutons.scss */
+.btn_ressource:hover {
+  background-color: #FFF9F9;
+  color: #fa8231;
+}
+
+/* line 48, ../sass/_boutons.scss */
 .picto {
   float: left;
 }
@@ -12094,9 +12118,8 @@ input[type=submit]:hover {
 }
 /* line 1, ../sass/_categorie_sidebare.scss */
 .categorie_sidebare {
-  margin: 12px 0 0 0;
+  margin: 36px 0 0 0;
   padding: 12px 12 12px 0;
-  border: 1px solid #45AAF2;
 }
 /* line 5, ../sass/_categorie_sidebare.scss */
 .categorie_sidebare .categorie {
@@ -12259,47 +12282,54 @@ input[type=submit]:hover {
   margin: 24px 24px;
 }
 
-/* line 31, ../sass/style.scss */
+/* line 1, ../sass/_paginator.scss */
+.paginator {
+  position: relative;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* line 32, ../sass/style.scss */
 .bgc-tips {
   background-color: #45AAF2;
 }
 
-/* line 34, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 .bgc-news {
   background-color: #8854D0;
 }
 
-/* line 37, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
 .bgc-ressources {
   background-color: #fa8231;
 }
 
-/* line 40, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .bgc_tips_light {
   background-color: rgba(69, 170, 242, 0.7);
 }
 
-/* line 43, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 .bgc_news_light {
   background-color: rgba(136, 84, 208, 0.7);
 }
 
-/* line 46, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
 .bgc_ressources_light {
   background-color: rgba(250, 130, 49, 0.7);
 }
 
-/* line 49, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 .bgcred {
   background-color: red;
 }
 
-/* line 52, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 .bgcgreen {
   background-color: green;
 }
 
-/* line 55, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 section.container {
   position: relative;
   margin-top: 12px;
@@ -12307,12 +12337,12 @@ section.container {
   margin: 0;
 }
 
-/* line 61, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 .principal {
   display: flex;
 }
 
-/* line 65, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 .circle {
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -12321,7 +12351,7 @@ section.container {
   -o-border-radius: 50%;
 }
 
-/* line 73, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 .center_icon {
   display: flex;
   align-items: center;
@@ -12329,13 +12359,42 @@ section.container {
 }
 
 /* line 79, ../sass/style.scss */
+.connection {
+  min-height: 100vh;
+}
+
+/* line 82, ../sass/style.scss */
 .primaire {
   background-color: #89cfef;
   color: #fff;
 }
-/* line 82, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 .primaire:hover {
   color: #89cfef;
   background-color: #fff;
   border: 1px solid #89cfef;
+}
+
+/* line 91, ../sass/style.scss */
+footer {
+  width: 100%;
+  min-height: 50px;
+  background-color: #363636;
+  bottom: 0;
+}
+/* line 96, ../sass/style.scss */
+footer p {
+  display: block;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  color: #FFF9F9;
+}
+/* line 102, ../sass/style.scss */
+footer p a {
+  color: #FFF9F9;
+}
+/* line 104, ../sass/style.scss */
+footer p a:hover {
+  color: #686868;
 }
