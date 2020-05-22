@@ -908,6 +908,12 @@ p {
   height: 60px;
 }
 
+/* line 115, ../sass/_texte.scss */
+.hat p {
+  font-size: 24px;
+  line-height: 24px;
+}
+
 /**
  * GRILLE  
  */
